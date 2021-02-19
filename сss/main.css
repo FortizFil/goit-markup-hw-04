@@ -119,7 +119,7 @@
 }
 
 .person {
-  background-color: var(--backgroundlitht-color);
+  background-color: var(--white-text);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
