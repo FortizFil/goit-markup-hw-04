@@ -15,6 +15,8 @@ html {
   --middlewhite-text: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --backgroundlitht-color: #f5f4fa;
+  --svg-maincolor: #afb1b8;
+  --backgroundlitht-icon: rgba(255, 255, 255, 0.1);
 }
 body {
   font-family: Roboto, sans-serif;
@@ -106,11 +108,19 @@ ul {
   line-height: 1.1;
   font-weight: 500;
   color: var(--grey-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--blue-text);
+}
+
+.mail {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 footer {
@@ -173,4 +183,53 @@ footer {
 
 .active {
   color: var(--blue-text);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.social-container {
+  margin-left: 70px;
+}
+
+.social-name {
+  color: var(--white-text);
+  margin-top: 72px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0px;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-text);
+  border-radius: 50px;
+  background: var(--backgroundlitht-icon);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--blue-text);
+}
+
+.social-icon {
+  fill: currentColor;
 }
